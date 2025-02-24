@@ -10,11 +10,11 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://b-r.io"),
-  title: "Brian Ruiz",
+  title: "Matteo Petrera",
   description:
-    "New York City based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
+    "Turin based Software Engineer, sharing insights on well-designed products and technology advancements.",
   openGraph: {
-    title: "Brian Ruiz",
+    title: "Matteo Petrera",
     url: "https://b-r.io/",
     images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "b-r.io" }],
   },

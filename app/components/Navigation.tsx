@@ -19,10 +19,10 @@ const links = [
     path: "/blog",
     title: "Blog",
   },
-  {
-    path: "/gear",
-    title: "Gear",
-  },
+  // {
+  //   path: "/gear",
+  //   title: "Gear",
+  // },
 ] as const;
 
 export default function Navigation() {

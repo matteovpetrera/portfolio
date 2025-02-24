@@ -41,7 +41,7 @@ async function getYoutubeStats() {
 }
 
 export const metadata: Metadata = {
-  title: "About | Brian Ruiz",
+  title: "About | Matteo Petrera",
   description:
     "New York City based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
 };
