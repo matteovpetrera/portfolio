@@ -44,10 +44,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const metadata: Metadata = {
     metadataBase: new URL("https://b-r.io"),
-    title: `${title} | Brian Ruiz`,
+    title: `${title} | Matteo Petrera`,
     description,
     openGraph: {
-      title: `${title} | Brian Ruiz`,
+      title: `${title} | Matteo Petrera`,
       description,
       type: "article",
       publishedTime,
@@ -79,7 +79,7 @@ export default async function Blog({ params }: { params: any }) {
           <div className="flex max-w-none items-center gap-4">
             <Avatar src={Me} initials="br" size="sm" />
             <div className="leading-tight">
-              <p>Brian Ruiz</p>
+              <p>Matteo Petrera</p>
               <p className="text-secondary">
                 <time dateTime={blog.date}>{formatDate(blog.date)}</time>
                 {blog.updatedAt
@@ -119,11 +119,15 @@ export default async function Blog({ params }: { params: any }) {
         <div className="flex flex-col gap-6">
           <h2>Contact</h2>
           <p className="max-w-md text-pretty text-secondary">
-            Questions or need more details? Ping me on {" "}
+            Questions or need more details? Ping me on{" "}
             <Link href="/discord" underline>
               Discord,
             </Link>{" "}
-            or any of my other social media <Link href="/links" underline>links</Link>.
+            or any of my other social media{" "}
+            <Link href="/links" underline>
+              links
+            </Link>
+            .
           </p>
         </div>
         <NewsletterSignupForm contained={false} />

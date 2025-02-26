@@ -6,7 +6,7 @@ import avatar from "public/avatar.png";
 export default function Links() {
   return (
     <>
-      <div className="flex flex-col gap-16 md:gap-24 max-w-lg mx-auto">
+      <div className="mx-auto flex max-w-lg flex-col gap-16 md:gap-24">
         <div className="flex animate-in flex-col gap-8">
           <Image
             src={avatar}
@@ -20,7 +20,9 @@ export default function Links() {
             className="animate-in space-y-1 text-center"
             style={{ "--index": 2 } as React.CSSProperties}
           >
-            <h1 className="text-2xl font-bold tracking-tight">Brian Ruiz</h1>
+            <h1 className="text-2xl font-bold tracking-tight">
+              Matteo Petrera
+            </h1>
             <p className="mx-auto max-w-sm text-secondary">
               Software engineer and content creator. Here are my socials, and
               ways to connect with me.

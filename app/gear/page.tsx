@@ -12,10 +12,10 @@ import Macrofactor from "public/gear/macrofactor.webp";
 import Raycast from "public/gear/raycast.png";
 
 export const metadata: Metadata = {
-  title: "Gear | Brian Ruiz",
+  title: "Gear | Matteo Petrera",
   description: "My toolbox. This is gear I actually own and recommend.",
   openGraph: {
-    title: "Gear | Brian Ruiz",
+    title: "Gear | Matteo Petrera",
     description: "My toolbox. This is gear I actually own and recommend.",
     type: "website",
     url: "https://b-r.io/blog/gear",
@@ -142,7 +142,8 @@ const gear = [
     name: "Sway Standing Desk",
     category: "Ergonofis",
     image: Sway,
-    description: "The highest of quality and made to last. Solid wood and a unique touch control panel.",
+    description:
+      "The highest of quality and made to last. Solid wood and a unique touch control panel.",
     link: "https://shrsl.com/49346",
     sponsored: true,
   },
@@ -228,7 +229,8 @@ const gear = [
     name: "Superhuman Mail",
     category: "Apps",
     image: Superhuman,
-    description: "Use link for 1 Month FREE code. The fastest email experience with cool AI features.",
+    description:
+      "Use link for 1 Month FREE code. The fastest email experience with cool AI features.",
     link: "https://superhuman.com/refer/bspuaqpo",
   },
   {

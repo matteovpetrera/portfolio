@@ -29,7 +29,7 @@ export default function Project({ params }: { params: any }) {
           <div className="flex max-w-none items-center gap-4">
             <Avatar src={Me} initials="br" size="sm" />
             <div className="leading-tight">
-              <p>Brian Ruiz</p>
+              <p>Matteo Petrera</p>
               <p className="text-secondary">
                 <time dateTime={project.date}>{project.date}</time>
                 {" · "}
@@ -51,18 +51,14 @@ export default function Project({ params }: { params: any }) {
         <div className="flex flex-col gap-6">
           <h2>Contact</h2>
           <p className="max-w-md text-pretty text-secondary">
-            Questions or need more details? Ping me on{" "}
-            <Link href="/discord" underline>
-              Discord,
-            </Link>{" "}
-            or any of my other social media{" "}
+            Questions or need more details? Hit me up on any of my{" "}
             <Link href="/links" underline>
-              links
+              socials
             </Link>
             .
           </p>
         </div>
-        <NewsletterSignupForm contained={false} />
+        {/* <NewsletterSignupForm contained={false} /> */}
       </div>
     </div>
   );

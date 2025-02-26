@@ -4,11 +4,11 @@ import PostList from "@/app/blog/components/PostList";
 import NewsletterSignupForm from "@/app/blog/components/NewsletterSignupForm";
 
 export const metadata: Metadata = {
-  title: "Blog | Brian Ruiz",
+  title: "Blog | Matteo Petrera",
   description:
     "I write about programming, design, and occasionally life updates!",
   openGraph: {
-    title: "Blog | Brian Ruiz",
+    title: "Blog | Matteo Petrera",
     description:
       "I write about programming, design, and occasionally life updates!",
     type: "website",

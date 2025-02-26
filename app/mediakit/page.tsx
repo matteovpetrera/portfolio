@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 import Link from "@/app/components/Link";
 
 export const metadata: Metadata = {
-  title: "Mediakit | Brian Ruiz",
+  title: "Mediakit | Matteo Petrera",
   description:
     "Creator based in New York City. Focuses on topics including consumer technology, software engineering, design, and lifestyle.",
 };
@@ -41,7 +41,7 @@ export default async function Mediakit() {
           <div className="flex flex-col gap-1">
             <h3 className="leading-none text-secondary">Media Kit</h3>
             <h2 className="whitespace-nowrap text-4xl font-bold tracking-tight">
-              Brian Ruiz
+              Matteo Petrera
             </h2>
           </div>
           <div className="flex w-fit max-w-md flex-col gap-1 md:max-w-sm">

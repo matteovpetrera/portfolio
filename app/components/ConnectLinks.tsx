@@ -30,8 +30,8 @@ const ConnectLinks: ConnectLink[] = [
   //   ),
   // },
   {
-    label: "Collaborations",
-    href: "mailto:partners@b-r.io",
+    label: "Contact",
+    href: "mailto:mvpetrera@gmail.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -44,36 +44,36 @@ const ConnectLinks: ConnectLink[] = [
       </svg>
     ),
   },
-  {
-    label: "YouTube",
-    href: "https://www.youtube.com/@brianruizy",
-    icon: <FaYoutube />,
-  },
+  // {
+  //   label: "YouTube",
+  //   href: "https://www.youtube.com/@brianruizy",
+  //   icon: <FaYoutube />,
+  // },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/brianruizy/",
+    href: "https://www.instagram.com/matteo_petrera/",
     icon: <FaInstagram />,
   },
-  {
-    label: "Join the Discord",
-    href: "https://discord.gg/KhNh8nbw3U",
-    icon: <FaDiscord />,
-  },
+  // {
+  //   label: "Join the Discord",
+  //   href: "https://discord.gg/KhNh8nbw3U",
+  //   icon: <FaDiscord />,
+  // },
   {
     label: "GitHub",
-    href: "https://github.com/brianruizy",
+    href: "https://github.com/matteovpetrera",
     icon: <FaGithub />,
   },
-  {
-    label: "Twitter",
-    href: "https://twitter.com/brianruizy",
-    icon: <FaXTwitter />,
-  },
   // {
-  //   label: "LinkedIn",
-  //   href: "https://www.linkedin.com/in/brianruizy/",
-  //   icon: <FaLinkedin />,
+  //   label: "Twitter",
+  //   href: "https://twitter.com/brianruizy",
+  //   icon: <FaXTwitter />,
   // },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/matteovpetrera/",
+    icon: <FaLinkedin />,
+  },
 ];
 
 export default ConnectLinks;

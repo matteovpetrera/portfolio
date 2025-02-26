@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex flex-col gap-8">
         <div className="space-y-4">
           <h1 className="animate-in text-3xl font-semibold tracking-tight text-primary">
-            hey, Matteo here!
+            hey, Matteo here! 👋
           </h1>
           <p
             className="max-w-lg animate-in text-secondary"
@@ -72,7 +72,7 @@ export default function Home() {
         <ProjectList projects={projects} />
       </div>
 
-      <div
+      {/* <div
         className="flex animate-in flex-col gap-8"
         style={{ "--index": 4 } as React.CSSProperties}
       >
@@ -90,7 +90,7 @@ export default function Home() {
           </p>
         </div>
         <PostList posts={blogs} />
-      </div>
+      </div> */}
     </div>
   );
 }

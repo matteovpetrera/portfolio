@@ -4,12 +4,12 @@ import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
-import NYC from "public/gallery/nyc.jpg";
-import meLily from "public/gallery/me-lily.jpg";
-import colorado from "public/gallery/colorado.jpg";
-import cowboy from "public/gallery/cowboy-bike.webp";
+import bardonecchia from "public/gallery/bardonecchia.jpg";
+import graduation from "public/gallery/my-graduation.jpg";
+import turin from "public/gallery/turin-centre.jpg";
+import hiking from "public/gallery/hiking.jpg";
 
 import Halo from "@/app/components/Halo";
 
@@ -52,7 +52,7 @@ function Photo({
   const shared = "absolute h-full w-full rounded-xl overflow-hidden";
   return (
     <motion.div
-      className={`absolute mx-auto cursor-grab hover:before:block hover:before:w-[calc(100%+55px)] hover:before:h-[300px] hover:before:absolute hover:before:-top-8 hover:before:-left-7`}
+      className={`absolute mx-auto cursor-grab hover:before:absolute hover:before:-left-7 hover:before:-top-8 hover:before:block hover:before:h-[300px] hover:before:w-[calc(100%+55px)]`}
       style={{ rotate: `${rotate}deg`, left, width, height, perspective: 1000 }}
       initial={{
         width,
@@ -84,7 +84,7 @@ function Photo({
       whileHover="flipped"
     >
       <motion.div
-        className="relative w-full h-full shadow-md rounded-xl will-change-transform"
+        className="relative h-full w-full rounded-xl shadow-md will-change-transform"
         style={{ transformStyle: "preserve-3d" }}
         transition={{ type: "spring", duration: 0.4 }}
         variants={{
@@ -101,7 +101,7 @@ function Photo({
             alt={alt}
             width={width}
             height={height}
-            className="absolute inset-0 object-cover w-full h-full bg-neutral-400 pointer-events-none rounded-xl"
+            className="pointer-events-none absolute inset-0 h-full w-full rounded-xl bg-neutral-400 object-cover"
             priority
           />
           {children}
@@ -109,7 +109,7 @@ function Photo({
         <div
           className={clsx(
             shared,
-            "bg-[#FFFAF2] flex items-center rounded-xl overflow-hidden"
+            "flex items-center overflow-hidden rounded-xl bg-[#FFFAF2]",
           )}
           style={{
             backfaceVisibility: "hidden",
@@ -117,12 +117,12 @@ function Photo({
           }}
         >
           <Halo strength={50} className="flex items-center">
-            <span className="absolute w-[500px] h-[500px] rotate-[-20deg] bg-repeat bg-[length:280px] bg-[url('/photopaper.png')]" />
+            <span className="absolute h-[500px] w-[500px] rotate-[-20deg] bg-[url('/photopaper.png')] bg-[length:280px] bg-repeat" />
             <div className="z-[1] px-6">
               <div
                 className={clsx(
                   ticketingFont.className,
-                  "flex flex-col gap-1 uppercase"
+                  "flex flex-col gap-1 uppercase",
                 )}
               >
                 <p className="text-secondary">{fileName}</p>
@@ -139,11 +139,11 @@ function Photo({
 export default function Gallery() {
   return (
     <>
-      <section className="flex gap-4 h-[268px] relative">
+      <section className="relative flex h-[268px] gap-4">
         <Photo
-          src={meLily}
-          meta="2021-07-12"
-          alt="Brian and Lily"
+          src={hiking}
+          meta="2024-11-12"
+          alt="Hiking with friends"
           width={324}
           height={239}
           rotate={-6}
@@ -151,9 +151,9 @@ export default function Gallery() {
           index={1}
         />
         <Photo
-          src={cowboy}
-          meta="2017-07-04"
-          alt="my e-bike"
+          src={bardonecchia}
+          meta="2024-12-16"
+          alt="Skiing in Bardonecchia"
           width={230}
           height={250}
           rotate={6.3}
@@ -162,9 +162,9 @@ export default function Gallery() {
           flipDirection="left"
         />
         <Photo
-          src={NYC}
-          meta="2021-05-20"
-          alt="World Trade Center"
+          src={graduation}
+          meta="2023-10-05"
+          alt="My Graduation"
           width={280}
           height={235}
           rotate={-5.4}
@@ -172,9 +172,9 @@ export default function Gallery() {
           index={3}
         />
         <Photo
-          src={colorado}
-          meta="2022-09-10"
-          alt={"Snowboarding in Colorado"}
+          src={turin}
+          meta="2023-10-12"
+          alt={"Downtown Turin"}
           width={220}
           height={260}
           rotate={7.6}

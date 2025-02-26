@@ -7,13 +7,11 @@ import ConnectLinks from "@/app/components/ConnectLinks";
 import Workplaces from "@/app/about/components/Workplaces";
 import Gallery from "@/app/about/components/Gallery";
 
-import hinesLogo from "public/work/hines-logo.jpeg";
-import perishipLogo from "public/work/periship-logo.jpeg";
-import camsLogo from "public/work/cams-logo.png";
-import uhdLogo from "public/work/uhd.png";
+import politecnicoLogo from "public/work/politecnico-logo.jpg";
+import enerconLogo from "public/work/enercon-logo.jpg";
 
-import colorado from "public/gallery/colorado.jpg";
-import NYC from "public/gallery/nyc.jpg";
+import hiking from "public/gallery/hiking.jpg";
+import turin from "public/gallery/turin-centre.jpg";
 import Greeting from "./components/Greeting";
 
 async function getYoutubeStats() {
@@ -74,8 +72,8 @@ export default async function About() {
           style={{ "--index": 1 } as React.CSSProperties}
         >
           <Image
-            src={NYC}
-            alt={"me and lily"}
+            src={hiking}
+            alt={"hiking in bardonecchia"}
             width={324}
             height={139}
             className="pointer-events-none relative inset-0 h-52 w-60 -rotate-6 rounded-xl bg-neutral-400 object-cover object-right shadow-md"
@@ -88,8 +86,8 @@ export default async function About() {
           style={{ "--index": 2 } as React.CSSProperties}
         >
           <Image
-            src={colorado}
-            alt={"Downtown New York"}
+            src={turin}
+            alt={"Downtown Turin"}
             width={220}
             height={260}
             className="pointer-events-none absolute inset-0 -top-44 left-[40%] w-48 rotate-6 rounded-xl bg-neutral-400 object-cover shadow-md md:left-[60%] md:w-56"
@@ -107,16 +105,20 @@ export default async function About() {
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
             <p>
-              <Greeting /> I&apos;m Brian Ruiz! Originally from Honduras,
-              I&apos;m now based in the vibrant place that is New York City.
+              <Greeting /> I&apos;m Matteo Petrera! Originally from Italy,
+              I&apos;m now based in the beautiful city of Turin.
             </p>
             <p>
-              My curiosity for computers began at age 10, which naturally led me
-              to pursue a career in tech. I&apos;ve been working as a software
-              engineer, specializing in full-stack development and design, for{" "}
-              {new Date().getFullYear() - 2019} years now!
+              My curiosity for tech & computers began at age 10, which naturally
+              led me to pursue a career in this field. I&apos;m passionate about
+              not only tech but even the business side of things. I'm a
+              management engineer graduate and currently pursuing my Master's
+              degree in Computer Engineering at Politecnico di Torino. During my
+              bachelor studies, I specialized in programming and coding (L-8
+              class) rather then the industial field, this led me to the
+              important choice of my master's degree.
             </p>
-            <p>
+            {/* <p>
               Alongside my coding journey, I run a{" "}
               <Link
                 className="underline"
@@ -129,11 +131,10 @@ export default async function About() {
               <span className="text-tertiary">
                 ({formattedSubscribers} subscribers strong)
               </span>
-            </p>
+            </p> */}
             <p>
-              When I&apos;m not at my desk, you can find me at the gym, biking
-              around the city on my e-bike, or enjoying some coffee at a local
-              shop!
+              When I&apos;m not studying, you can find me at the gym, running
+              around the city, or exploring new places!
             </p>
           </div>
         </Section>
@@ -166,12 +167,12 @@ export default async function About() {
             ))}
           </ul>
         </Section>
-        <Section heading="Work" headingAlignment="left">
+        <Section heading="Education" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              I specialize in Python, data analytics, React, web development,
-              UI/UX, and product design. But I am always learning new things.
-              Here are some of the places I have worked.
+              I specialize in web development, data analytics, React, UI/UX, and
+              product design. But I am always learning new things. Here are what
+              i achieved so far:
             </p>
             <Workplaces items={workplaces} />
           </div>
@@ -183,31 +184,24 @@ export default async function About() {
 
 const workplaces = [
   {
-    title: "Senior Software Engineer",
-    company: "Hines",
-    date: "2022 -",
-    imageSrc: hinesLogo,
-    link: "https://hines.com",
+    title: "Management Engineering",
+    company: "Bachelor - Politecnico di Torino",
+    date: "2020 - 2023",
+    imageSrc: politecnicoLogo,
+    link: "https://www.polito.it/",
   },
   {
-    title: "Jr. Software Engineer",
-    company: "PeriShip",
-    date: "2021 - 2022",
-    imageSrc: perishipLogo,
-    link: "https://peripharma.com/",
+    title: "Computer Engineering - Software",
+    company: "Master - Politecnico di Torino",
+    date: "2023 - 2025",
+    imageSrc: politecnicoLogo,
+    link: "https://www.polito.it/",
   },
   {
-    title: "Python Developer",
-    company: "CAMS",
-    date: "2019 - 2020",
-    imageSrc: camsLogo,
-    link: "https://camstex.com",
-  },
-  {
-    title: "Coding Camp Teacher",
-    company: "University of Houston",
-    date: "2019",
-    imageSrc: uhdLogo,
-    link: "https://www.uhd.edu/",
+    title: "Summer internship",
+    company: "ENERCON Service Italia s.r.l.",
+    date: "2019 - 2019",
+    imageSrc: enerconLogo,
+    link: "https://www.enercon.de/en",
   },
 ];
