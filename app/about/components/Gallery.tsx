@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import localFont from "next/font/local";
 
-import bardonecchia from "public/gallery/bardonecchia.jpg";
-import graduation from "public/gallery/my-graduation.jpg";
-import turin from "public/gallery/turin-centre.jpg";
-import hiking from "public/gallery/hiking.jpg";
+import bardonecchia from "public/gallery/bardonecchia.png";
+import graduation from "public/gallery/my-graduation.png";
+import turin from "public/gallery/turin-centre.png";
+import hiking from "public/gallery/hiking.png";
 
 import Halo from "@/app/components/Halo";
 
@@ -48,7 +48,7 @@ function Photo({
   const fileName =
     filename ||
     (typeof src !== "string" &&
-      `${src.src.split("/").at(-1)?.split(".")[0]}.jpg`);
+      `${src.src.split("/").at(-1)?.split(".")[0]}.png`);
   const shared = "absolute h-full w-full rounded-xl overflow-hidden";
   return (
     <motion.div

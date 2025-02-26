@@ -10,8 +10,8 @@ import Gallery from "@/app/about/components/Gallery";
 import politecnicoLogo from "public/work/politecnico-logo.jpg";
 import enerconLogo from "public/work/enercon-logo.jpg";
 
-import hiking from "public/gallery/hiking.jpg";
-import turin from "public/gallery/turin-centre.jpg";
+import hiking from "public/gallery/hiking.png";
+import turin from "public/gallery/turin-centre.png";
 import Greeting from "./components/Greeting";
 
 async function getYoutubeStats() {
