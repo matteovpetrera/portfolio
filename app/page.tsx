@@ -30,12 +30,12 @@ export default function Home() {
             className="max-w-lg animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            I'm a 24-year-old engineer graduate. Currently, I'm pursuing my
-            Master's degree in Computer Engineering @ Politecnico di Torino.
-            Passionate about leveraging technology to solve complex problems, I
-            am dedicated to exploring the intersection of engineering and
-            computer science to drive innovation and make a meaningful impact in
-            the tech industry.
+            I&apos;m a 24-year-old engineer graduate. Currently, I&apos;m
+            pursuing my Master&apos;s degree in Computer Engineering @
+            Politecnico di Torino. Passionate about leveraging technology to
+            solve complex problems, I am dedicated to exploring the intersection
+            of engineering and computer science to drive innovation and make a
+            meaningful impact in the tech industry.
           </p>
         </div>
         <div

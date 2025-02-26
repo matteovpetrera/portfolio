@@ -111,12 +111,12 @@ export default async function About() {
             <p>
               My curiosity for tech & computers began at age 10, which naturally
               led me to pursue a career in this field. I&apos;m passionate about
-              not only tech but even the business side of things. I'm a
-              management engineer graduate and currently pursuing my Master's
-              degree in Computer Engineering at Politecnico di Torino. During my
-              bachelor studies, I specialized in programming and coding (L-8
-              class) rather then the industial field, this led me to the
-              important choice of my master's degree.
+              not only tech but even the business side of things. I&apos;m a
+              management engineer graduate and currently pursuing my
+              Master&apos;s degree in Computer Engineering at Politecnico di
+              Torino. During my bachelor studies, I specialized in programming
+              and coding (L-8 class) rather then the industial field, this led
+              me to the important choice of my master&apos;s degree.
             </p>
             {/* <p>
               Alongside my coding journey, I run a{" "}
