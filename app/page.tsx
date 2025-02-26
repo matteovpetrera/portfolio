@@ -1,5 +1,8 @@
 import { allBlogs } from ".contentlayer/generated";
-import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowDownRightIcon,
+  ArrowUpRightIcon,
+} from "@heroicons/react/20/solid";
 import { allProjects } from ".contentlayer/generated";
 
 import Link from "@/app/components/Link";
@@ -39,6 +42,13 @@ export default function Home() {
           className="flex animate-in gap-3 text-sm"
           style={{ "--index": 2 } as React.CSSProperties}
         >
+          <a
+            href="/mvpetrera_resume.pdf"
+            download="mvpetrera_resume.pdf"
+            className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
+          >
+            Resume <ArrowDownRightIcon className="h-4 w-4 text-tertiary" />
+          </a>
           <Link
             href="https://www.linkedin.com/in/matteovpetrera/"
             className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
