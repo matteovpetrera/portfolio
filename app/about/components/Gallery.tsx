@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import localFont from "next/font/local";
 
-import bardonecchia from "public/gallery/bardonecchia.png";
-import graduation from "public/gallery/my-graduation.png";
-import turin from "public/gallery/turin-centre.png";
-import hiking from "public/gallery/hiking.png";
+import bardonecchia from "@/public/gallery/bardonecchia.png";
+import graduation from "@/public/gallery/my-graduation.png";
+import turin from "@/public/gallery/turin-centre.png";
+import hiking from "@/public/gallery/hiking.png";
 
 import Halo from "@/app/components/Halo";
 
