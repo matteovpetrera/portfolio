@@ -21,7 +21,7 @@
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@types/linkify-it": "^3.0.5",
     "@types/mapbox-gl": "^3.1.0",
-    "@vercel/analytics": "^1.1.1",
+    "@vercel/analytics": "^1.5.0",
     "@vercel/og": "^0.5.20",
     "@vercel/postgres": "^0.8.0",
     "clsx": "^2.1.0",
