@@ -1,111 +1,131 @@
 ---
-title: 'Innovating the real estate investment industry with tech'
-date: '2021-09-01'
-summary: 'A quick walkthrough overview of the project setup and the technology stack we used.'
-tags: ["Big Data", "Python"]
+title: "Hines App Dev"
+date: "2021 - 2024"
+summary: "Designing and developing software used for management of $90b in assets."
+longSummary: "At Hines I've been responsible for building out full stack web applications at scale. Which are used internally for management of over $90b in assets. Here are some of the standout projects and features I've contributed to."
+url: "https://hines.com/properties"
+tags: ["Web Development", "Design", "Branding", "UI/UX", "Django", "Next.js"]
 ---
 
-In May 2021, I joined the application development team at Hines —one of the largest privately held real estate investors and managers in the world. Our team is responsible for building a suite of applications that help Hines manage its $81.7B Portfolio of Assets Under Management, serving 27 countries worldwide, and doing so successfully for over 64 years.
-
-## Transforming the industry
-
-At Hines, we believe strongly in pushing the boundaries to shape the future and build a better world by getting into a state of mind of innovation. It is a goal to transform the real estate industry by placing innovation at the very core of the company.
-
-What differentiates Hines is a tailored approach to global real estate investing. We continue to evaluate and incorporate new technologies, as opposed to only using cookie-cutter solutions. Best said by the company’s founder:
-
-> I believe we can always improve, either by rethinking existing ways of doing things, or by thinking outside the box. This is innovation. –Gerald D. Hines
-
-## My contributions
-
-Working with Hines has allowed me to work with some of the most talented and passionate people in the industry. Let’s take a look at some of the things I’ve done at Hines: Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. My Contributions to the team includes
-
-let’s take a look at some of the things I’ve done at Hines: Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-- Product Design (UI/UX)
-- Full-stack Software Engineering
-
-## Design Systems
-I’m firm on the idea that you can’t have a good product without good design. Praesent malesuada diam quis leo maximus consectetur. Praesent at dapibus elit. Donec vitae orci eu nisi efficitur facilisis. Praesent malesuada diam quis leo maximus consectetur. Praesent at dapibus elit. Donec vitae orci eu nisi efficitur facilisis.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare consequat aliquam. Nulla condimentum eros et arcu tristique, vitae sollicitudin libero elementum. Mauris nec tincidunt urna. Praesent malesuada diam quis leo maximus consectetur.
-
-![](figma.png)
-
-## Full stack development
-Quisque porta ex quis sem aliquet convallis. Fusce dignissim eros vel massa varius, sed porta libero tempus. Donec id vehicula purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-By going the Django way we can use a classical MVT (Model View Template) approach to build our applications, and create robust and scalable applications that are easy to maintain and extend.
-
-<Alert type="info"> 
-Note that the following code snippets are not real production-level code, 
-as showing proprietary intellectual property could get me into a mess 😅.
+<Alert>
+  The following projects are private and internal, so unfortunately I'm unable
+  to show live demos or code specifics. However, I'll do my best to provide a
+  high level overview of the projects and my role in them!
 </Alert>
 
+### About Hines
 
-```python  showLineNumbers
-from django.db import models
-from datetime import datetime
-from realtors.models import Realtor
+Hines is a leading global real estate investment manager. We own and operate $93.2 billion¹ of assets across property types and on behalf of a diverse group of institutional and private wealth clients. Every day, our 5,000 employees in 30 countries draw on our 65-year history to build the world forward by investing in, developing, and managing some of the world’s best real estate.
 
-class Listing(models.Model):
-  owner = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
-  price = models.IntegerField()
-  title = models.CharField(max_length=200)
-  address = models.CharField(max_length=200)
-  description = models.TextField(blank=True)
+<LinkPreview
+  title="Hines"
+  imageUrl="https://images.unsplash.com/photo-1529369901324-74af323b49c8?q=80&w=3820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  description="Hines is a leading global real estate investment manager. Learn more about the firm here."
+  link="https://hines.com/about"
+/>
 
+## A Fresh New Approach
 
-  def __str__(self):
-    return self.title
-```
+When I joined the team at Hines, I saw an opportunity to improve the user experience of our flagship app. Despite the app's potential and its hundreds of active users, the existing design was outdated and the branding was inconsistent.
 
-<figcaption>1. Defining backend database models</figcaption>
+I took the initiative to redesign the app from the ground up, introducing a new design system and a fully fledged UI/UX redesign. The new design was modern, clean, and consistent, and could be applied to other applications. It was well received by the users and the stakeholders.
 
+<Image
+  src="/projects/hines/cover.png"
+  alt="design"
+  width={1458}
+  height={761}
+  contained
+  size="lg"
+/>
 
-```python showLineNumbers
-from .models import Listing
+### Introducing Figma
 
-def index(request):
-  listings = Listing.objects.order_by('-list_date').filter(is_published=True)
-  paginator = Paginator(listings, 6)
-  page = request.GET.get('page')
-  paged_listings = paginator.get_page(page)
-  context = {'listings': paged_listings }
+As part of the redesign process, I introduced Figma as a design tool to the team. Starting with a fresh empty canvas, I built components from scratch, and began defining our new color palette, typography, and iconography. This was crucial to have our app look less like a Bootstrap 4 template and more like a custom commercial application.
 
-  return render(request, 'listings/listings.html', context)
-```
+<Image
+  src="/projects/hines/design.png"
+  alt="design"
+  width={1458}
+  height={761}
+  size="lg"
+/>
 
-<figcaption>2. Python views to query the DB</figcaption>
+Training the team on how to use Figma helped us to collaborate better and completely changed the way we design and develop applications. It also removed the need for us to hire contractors for design work, making our process more efficient and cohesive.
 
-```html showLineNumbers
-<section id="listings">
-  <div class="container">
-    <div class="row">
-      {% if listings %}
-        {% for listing in listings %}
-          <h2>${{ listing.price | intcomma }}</span>       
-          <h4>{{ listing.title }}</h4>
-          <p>Description: {{ listing.description }}</p>
-        {% endfor %}
-      {% else %}
-          <p>No Listings Available</p>
-      {% endif %}
-    </div>
-  </div>
-</section>
-```
+<Image
+  src="/projects/hines/dashboard.png"
+  alt="dashboard"
+  width={1462}
+  height={1108}
+  size="lg"
+  caption="Building an entirely new dashboard, elevating the user experience and allowing our users to work more efficiently."
+/>
 
-<figcaption>3. Finishing with front-end HMTL template</figcaption>
+### Introducing React and Next.js
 
- have a fully functional application that is responsive and works on all devices. Furthermore, Django allows for future proofing our applications and taking a RESTful approach and incorporating a JS framework. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Initially, our team used Django for data management and workflows in several applications. As our team and applications grew, we faced limitations with Django's Jinja templating system, especially regarding interactivity and user experience.
 
-![dashboard interface](dashboard.png)
+When tasked with building a new application, I chose to use Next.js for the front end while keeping Django for the backend <span className="text-tertiary">(having used in hobby projects)</span>. This combination allowed us to retain Django's server-side rendering and performance benefits while enhancing interactivity and user experience with React's features. The benefits were immediate:
 
-## Making a global impact
+- **Component-Based Architecture**: React's encapsulated components simplify complex UIs and make code predictable and debuggable.
+- **Hybrid Rendering**: Allows us to choose between server-side rendering, static site generation, and client-side rendering based on the use case.
+- **Performance**: Next.js's optimized build process and automatic code splitting improve performance and SEO.
+- **Developer Experience**: React's declarative syntax and component-based architecture make development faster and more enjoyable.
+- **Community and Resources**: React's large developer community and abundant resources provide readily available solutions.
 
-One of my personal career goals as a software engineer has always been to make an impact at scale. And, a company like Hines which has a global presence allows for me and my team to do just that. 
+---
 
+## The Global Data Hub App
 
-## Conclusion
-Exciting things are happening at Hines. And, it comes at a greate pleasure to have theopportunity to work with some of the most creative, forward-thinking people in the industry, and contribute to the progress and development of the company. Only time will tell what awaits us in the future, but the best way to predict it is by creating it in our present.
+The global data hub or GDH is our flagship application. It's used by hundreds of users and groups across different company regions and is responsible for outlining the very structure of the companies investment pipeline.
 
+All the way from initial project proposal, voting, funding, and closing of the deal. What started as a single CRUD workflow for the real estate investment pipeline has grown into a full fledged data management platform.
+
+<Image
+  src="/projects/hines/table.png"
+  alt="tables"
+  width={1408}
+  height={927}
+  contained
+/>
+
+<Image
+  src="/projects/hines/nav.png"
+  alt="nav"
+  width={1408}
+  height={927}
+  contained
+/>
+
+<Image
+  src="/projects/hines/form.png"
+  alt="form"
+  width={1408}
+  height={927}
+  contained
+/>
+
+## Koko: Our new AI platform
+
+With the advent of AI and machine learning, we saw an opportunity to improve our data management and analysis capabilities. I was tasked with building a new platform that will hold a collection of AI models and tools that can be used by our team to from public-facing content generation to internal data analysis.
+
+Since AI is a complex topic in itself, I emphasized the importance of and intuitive user experience and simplicity in the design. This is something that I believe [OpenAI](https://openai.com) did an amazing job with their ChatGPT product design.
+
+<Image
+  src="/projects/hines/login.png"
+  alt="og"
+  width={2267}
+  height={1280}
+  contained
+  size="lg"
+/>
+
+<Image
+  src="/projects/hines/list.png"
+  alt="lists"
+  width={2267}
+  height={1280}
+  contained
+  size="lg"
+/>
