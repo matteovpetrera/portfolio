@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
@@ -9,14 +10,14 @@ import Navigation from "@/app/components/Navigation";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://b-r.io"),
+  metadataBase: new URL("https://mvpetrera.com"),
   title: "Matteo Petrera",
   description:
-    "Turin based Software Engineer, sharing insights on well-designed products and technology advancements.",
+    "Turin based Software Engineer, sharing his passions and achievements.",
   openGraph: {
     title: "Matteo Petrera",
-    url: "https://b-r.io/",
-    images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "b-r.io" }],
+    url: "https://mvpetrera.com",
+    // images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "mvpetrera.com" }],
   },
 };
 
@@ -36,6 +37,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
           <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
