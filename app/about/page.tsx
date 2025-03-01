@@ -132,10 +132,10 @@ export default async function About() {
                 ({formattedSubscribers} subscribers strong)
               </span>
             </p> */}
-            <p>
+            {/* <p>
               When I&apos;m not studying, you can find me at the gym, running
               around the city, or exploring new places!
-            </p>
+            </p> */}
           </div>
         </Section>
         <Section heading="Connect" headingAlignment="left">
